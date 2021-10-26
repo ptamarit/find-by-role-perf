@@ -3,23 +3,23 @@ import App from './App';
 
 test('one day', () => {
   render(<App />);
-  const day11 = screen.getByRole('button', { name: '11', hidden: true });
+  const day11 = screen.getByRole('button', { name: '11' });
   expect(day11).toBeInTheDocument();
 });
 
 test('two days', () => {
   render(<App />);
-  const day11 = screen.getByRole('button', { name: '11', hidden: true });
-  const day12 = screen.getByRole('button', { name: '12', hidden: true });
+  const day11 = screen.getByRole('button', { name: '11' });
+  const day12 = screen.getByRole('button', { name: '12' });
   expect(day11).toBeInTheDocument();
   expect(day12).toBeInTheDocument();
 });
 
 test('three days', () => {
   render(<App />);
-  const day11 = screen.getByRole('button', { name: '11', hidden: true });
-  const day12 = screen.getByRole('button', { name: '12', hidden: true });
-  const day13 = screen.getByRole('button', { name: '13', hidden: true });
+  const day11 = screen.getByRole('button', { name: '11' });
+  const day12 = screen.getByRole('button', { name: '12' });
+  const day13 = screen.getByRole('button', { name: '13' });
   expect(day11).toBeInTheDocument();
   expect(day12).toBeInTheDocument();
   expect(day13).toBeInTheDocument();
@@ -27,16 +27,16 @@ test('three days', () => {
 
 test('ten days', () => {
   render(<App />);
-  const day11 = screen.getByRole('button', { name: '11', hidden: true });
-  const day12 = screen.getByRole('button', { name: '12', hidden: true });
-  const day13 = screen.getByRole('button', { name: '13', hidden: true });
-  const day14 = screen.getByRole('button', { name: '14', hidden: true });
-  const day15 = screen.getByRole('button', { name: '15', hidden: true });
-  const day16 = screen.getByRole('button', { name: '16', hidden: true });
-  const day17 = screen.getByRole('button', { name: '17', hidden: true });
-  const day18 = screen.getByRole('button', { name: '18', hidden: true });
-  const day19 = screen.getByRole('button', { name: '19', hidden: true });
-  const day20 = screen.getByRole('button', { name: '20', hidden: true });
+  const day11 = screen.getByRole('button', { name: '11' });
+  const day12 = screen.getByRole('button', { name: '12' });
+  const day13 = screen.getByRole('button', { name: '13' });
+  const day14 = screen.getByRole('button', { name: '14' });
+  const day15 = screen.getByRole('button', { name: '15' });
+  const day16 = screen.getByRole('button', { name: '16' });
+  const day17 = screen.getByRole('button', { name: '17' });
+  const day18 = screen.getByRole('button', { name: '18' });
+  const day19 = screen.getByRole('button', { name: '19' });
+  const day20 = screen.getByRole('button', { name: '20' });
   expect(day11).toBeInTheDocument();
   expect(day12).toBeInTheDocument();
   expect(day13).toBeInTheDocument();
